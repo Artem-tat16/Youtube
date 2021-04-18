@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Enge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="____" />
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <button class="menu-button">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+      <img src="/img/logo.svg" alt="YouTube" class="menu-logo">
+      <div class="group-input">
+        <input type="search" name="Search" class="menu-search" placeholder="Поиск"> <!-- Search - означает что это именно поисковая строка -->
+        <button type="submit" class="button-search ">
+          <svg class="icon icon-search" width="19" height="19">
+            <use xlink:href="img/icons.svg#menu-search"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="group-icon">
+        <a href="#" class="group-icons-link">
+        <svg class="icon icon-video" width="27" height="20">
+          <use xlink:href="img/icons.svg#video"></use>
+        </svg>
+      </a>
+        <a href="#" class="group-icons-link">
+        <svg class="icon icon-menu" width="21" height="21">
+          <use xlink:href="img/icons.svg#menu"></use>
+        </svg>
+      </a>
+        <a href="#" class="group-icons-link">
+        <svg class="icon icon-nofitication" width="22" height="26">
+          <use xlink:href="img/icons.svg#nofitication"></use>
+        </svg>
+      </a>
+      </div>
+      <a href="#" class="user">
+        <img src="img/avatar.svg" alt="" class="user-avatar">
+      </a>
+    </header>
+    <!-- ------ -->
+
+      <!-- Боковое меню -->
+      <div class="conteiner">
+        <aside class="sidebar">
+          <nav class="navigation">
+            <ul class="menu-navigation">
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">
+                  <svg class="icon icon-home" width="20" height="19">
+                    <use xlink:href="img/icons.svg#home"></use>
+                  </svg>
+                  <span class="navigation-text">Home</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">
+                   <svg class="icon icon-trending" width="20" height="19">
+                     <use xlink:href="img/icons.svg#trending"></use>
+                   </svg>
+                  <span class="navigation-text">Trending </span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">
+                   <svg class="icon icon-subscriptions" width="20" height="19">
+                     <use xlink:href="img/icons.svg#subscriptions"></use>
+                   </svg>
+                  <span class="navigation-text">Subscriptions</span>
+                </a>
+              </li>
+            </ul> <!-- The end navigation-item 1-->
+
+            <ul class="menu-navigation"> 
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <svg class="icon icon-library" width="20" height="19">
+                  <use xlink:href="img/icons.svg#library"></use>
+                </svg>
+                <span class="navigation-text">Library</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                 <svg class="icon icon-history" width="20" height="19">
+                   <use xlink:href="img/icons.svg#history"></use>
+                 </svg>
+                <span class="navigation-text">History </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                 <svg class="icon icon-watch later" width="20" height="19">
+                   <use xlink:href="img/icons.svg#watch later"></use>
+                 </svg>
+                <span class="navigation-text">Watch later</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <svg class="icon icon-favourites" width="20" height="19">
+                <use xlink:href="img/icons.svg#favourites"></use>
+              </svg>
+              <span class="navigation-text">Favourites</span>
+            </a>
+            </li>
+            <li class="navigation-item">
+            <a href="#" class="navigation-link">
+               <svg class="icon icon-liked videos" width="20" height="19">
+                 <use xlink:href="img/icons.svg#liked videos"></use>
+               </svg>
+              <span class="navigation-text">Liked videos</span>
+            </a>
+            </li>
+            <li class="navigation-item">
+            <a href="#" class="navigation-link">
+               <svg class="icon icon-music" width="20" height="19">
+                 <use xlink:href="img/icons.svg#music"></use>
+               </svg>
+              <span class="navigation-text">Music</span>
+            </a>
+            </li>
+             <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <svg class="icon icon-games" width="20" height="19">
+                  <use xlink:href="img/icons.svg#games"></use>
+                </svg>
+                <span class="navigation-text">Games</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <svg class="icon icon-show more" width="20" height="19">
+                  <use xlink:href="img/icons.svg#show more"></use>
+                </svg>
+                <span class="navigation-text">Show more</span>
+              </a>
+            </li>
+          </ul> <!-- The end navigation-item 2-->
+          </nav>
+
+          <h2 class="navigation-title">Subscriptions</h2>
+          <ul class="menu-navigation">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <img src="img/nav-user/User1.png" alt="Photo: User 1" class="navigation-image">
+                <span class="navigation-text">User 1</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <img src="img/nav-user/User2.png" alt="Photo: User 2" class="navigation-image">
+                <span class="navigation-text">User 2</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <img src="img/nav-user/User3.png" alt="Photo: User 3" class="navigation-image">
+                <span class="navigation-text">User 3</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <img src="img/nav-user/User4.png" alt="Photo: User 4" class="navigation-image">
+                <span class="navigation-text">User 4</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <img src="img/nav-user/User5.png" alt="Photo: User 5" class="navigation-image">
+                <span class="navigation-text">User 5</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <img src="img/nav-user/User6.png" alt="Photo: User 6" class="navigation-image">
+                <span class="navigation-text">User 6</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu-navigation">
+            <li class="navigation-item">
+              <div class="setting"></div>
+             <a href="#" class="navigation-link">
+              <svg class="icon icon-setting" width="20" height="19">
+                 <use xlink:href="img/icons.svg#setting"></use>
+              </svg>
+              <span class="navigation-text">Setting</span>
+             </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!--  -->
+     
+  </body>
+</html>

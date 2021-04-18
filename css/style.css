@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box; /*поможет правильно считать ширину и высоту чтоб не чего не разъезжалось. Согласно спецификации CSS ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border). Аналогично обстоит и с высотой блока. Свойство box-sizing позволяет изменить этот алгоритм, чтобы свойства width и height задавали размеры не контента, а размеры блока.*/
+}
+body{
+  font-family: 'Mulish', sans-serif;
+  font-style: 16px;
+  font-weight: 400px;
+}
+/* Header */
+.header{
+  display: flex; 
+  align-items: center; /*будут центроваться объекты относительно верхней и нижней границы*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 70px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.menu-button{
+  padding: 0;
+  display: flex;
+  flex-direction: column; /*задает направление флек элементов: располагается вертикально и направлена сверху вниз*/
+  justify-content: space-between;
+  background-color: #fff;
+  width: 20px;
+  height: 17px;
+  border: none;
+  margin-right: 28px;
+  cursor: pointer;
+}
+.menu-line{
+  display: block;
+  width: 20px;
+  height: 3px;
+  background : #1F2022;
+  border-radius: 30px;
+}
+.menu-logo{
+  margin-right: 59px;
+}
+.group-input{
+  max-width: 830px;
+  width: 50%;
+  background: #EBEBEB;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 17px;
+}
+.menu-search{
+  background-color: transparent; /*  Фон прозрачный*/
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 23px;
+  padding-left: 23px;
+  width: 100%; /*чтоб поиск занимал весь блок и не был обрубком*/
+}
+.button-search{
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icon-search{
+  fill: #000;/* Заливка svg изображения */
+}
+.group-icon{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.group-icons-link{
+  text-decoration: none;
+  opacity: 0.24;
+}
+.group-icons-link:hover{
+  opacity: 0.7 ;
+}
+.group-icons-link:not(:last-child){ /*group-icons-link:not(:last-child) - обозначает что стиль будет применен ко всем иконкам с этим классом кроме последней иконки*/
+  margin-right: 50px;
+}
+.user{
+  margin-left: 45px;
+}
+.user-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* ------ */
+
+/* Боковое меню */
+.sidebar{
+  padding-left: 32px;
+}
+.menu-navigation{
+  margin-bottom: 60px;
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none; /*Убираем точки у списка*/
+}
+ .navigation-item{ 
+   margin-bottom: 28px;  
+ }
+ .navigation-item .icon{
+  fill: #898989; /*Цвет заливки иконок*/
+}
+.navigation-link{
+  display: flex;
+  align-items: center;
+  color: #898989;
+  text-decoration: none;
+}
+.navigation-link:hover{
+  color: #FF0000;
+}
+.navigation-link:hover .icon{
+  fill: #FF0000;
+}
+ .navigation-text{
+   margin-left: 15px; 
+ }
+ .navigation-image{
+   width: 26px;
+   height: 26px;
+ }
+ .navigation-title{
+   margin-bottom: 30px;
+  font-weight: bold; /*Насыщенность цвета жирная, то же самое что и 700*/
+  font-size: 18px;
+  line-height: 23px;
+ }
+ .setting{
+   padding-top: 30px;
+ }
+/* ------ */
+
+
+ 
